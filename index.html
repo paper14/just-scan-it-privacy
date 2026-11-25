@@ -59,7 +59,7 @@
     <main>
       <div class="card">
         <h1>Just Scan It: Privacy Policy</h1>
-        <p class="date">Effective date: 18 November 2026</p>
+        <p class="date">Effective date: 25 November 2026</p>
 
         <p>
           This policy explains what the Just Scan It app does with your
@@ -72,7 +72,12 @@
             Your scans stay on your phone. We never receive them, and they are
             never used for ads.
           </li>
-          <li>There is no account, no sign-in and no analytics.</li>
+          <li>There is no account, no sign-in and no analytics of our own.</li>
+          <li>
+            Saved PDFs are searchable: the app reads the text on each page on
+            your phone. Your pages and their text are never sent to us or to
+            Google.
+          </li>
           <li>
             The app shows a banner ad at the bottom of the scan list and the
             preview screen, provided by Google AdMob. To show ads, Google collects some information from your
@@ -86,6 +91,13 @@
           <strong>Camera images.</strong> When you scan, the camera captures
           pictures of your documents. The app processes them on your phone
           (cropping, rotating and the Auto and Black &amp; White filters).
+        </p>
+        <p>
+          <strong>Text in your scans.</strong> When you save or share a PDF, the
+          app reads the text on each page (text recognition, also called OCR)
+          and adds it to the PDF as a hidden layer, so you can search, select
+          and copy it. This happens on your phone. The recognized text is kept
+          only inside the PDF; the app does not store it anywhere else.
         </p>
         <p>
           <strong>Your scans.</strong> Saved scans (the page images, the PDF or
@@ -110,7 +122,8 @@
         </p>
         <p>
           <strong>Settings.</strong> The app remembers whether the "Also save
-          to" option is on. This stays on your phone.
+          to" option is on, and your choice of light or dark theme. These stay
+          on your phone.
         </p>
 
         <h2>Advertising</h2>
@@ -167,11 +180,14 @@
             We do not collect, store or receive your scans or any other personal
             information. The app has no server of its own.
           </li>
-          <li>We do not use analytics or crash-reporting tools.</li>
+          <li>We do not use analytics or crash-reporting tools of our own.</li>
           <li>
             We do not sell your information. The only information that leaves
             your phone through the app (other than files you choose to share) is
-            what the Google Mobile Ads SDK sends to Google, described above.
+            what the Google Mobile Ads SDK sends to Google, described above, and
+            the technical information Google's scanner and text recognition send
+            to Google, described under "Scanning and text recognition from
+            Google" below. None of it includes your scans or their text.
           </li>
         </ul>
 
@@ -224,18 +240,36 @@
           </li>
         </ul>
 
-        <h2>The scanner from Google</h2>
+        <h2>Scanning and text recognition from Google</h2>
         <p>
           On Android, the scanning screen (finding the page edges and capturing
           the pages) is provided by Google's ML Kit document scanner, part of
-          Google Play services on your phone. According to Google, the scanner
-          processes images on your device. Google Play services may send Google
-          information about how the scanner feature is working, as described in
-          Google's documentation and covered by Google's privacy policy.
+          Google Play services on your phone. On iPhone, it is provided by
+          Apple's VisionKit, which is part of iOS.
         </p>
         <p>
-          On iPhone, the scanning screen is provided by Apple's VisionKit, which
-          is part of iOS.
+          Reading the text for searchable PDFs uses Google's ML Kit text
+          recognition, which is built into the app on both Android and iPhone.
+        </p>
+        <p>
+          Both ML Kit features work on your phone. According to Google, your
+          page images and the text found in them are never sent to Google.
+          ML Kit does send Google technical information about how these features
+          are working, which Google uses for diagnostics and to maintain and
+          improve ML Kit. This can include your phone's maker, model and system
+          version, the app's name and version, how long recognition took, the
+          size and format of the images, error codes, and an identifier for
+          this installation of the app. Google says the identifier is not
+          intended to identify you or your phone. The information is sent over
+          an encrypted connection, Google does not pass it on to third parties,
+          and ML Kit may also download updates from Google from time to time.
+          Details:
+          <a href="https://developers.google.com/ml-kit/android-data-disclosure"
+            >developers.google.com/ml-kit/android-data-disclosure</a
+          >. Google's privacy policy applies:
+          <a href="https://policies.google.com/privacy"
+            >policies.google.com/privacy</a
+          >.
         </p>
 
         <h2>Permissions</h2>
@@ -244,7 +278,11 @@
             <strong>Camera:</strong> to scan your documents. The app asks for it
             the first time it is needed.
           </li>
-          <li><strong>Internet:</strong> used only to show ads.</li>
+          <li>
+            <strong>Internet:</strong> used to show ads, and by Google's ML Kit
+            to send the technical information described under "Scanning and
+            text recognition from Google". The app's own code never uses it.
+          </li>
           <li>
             <strong>Advertising ID (Android):</strong> used by the Google Mobile
             Ads SDK, as described under Advertising.
